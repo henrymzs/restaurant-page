@@ -754,3 +754,148 @@ body {
         font-size: 3rem;
     }
 }
+
+.differentials-section {
+  padding: 5rem 0;
+  background-color: var(--color-background);
+}
+
+.differentials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.differentials-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.differentials-label {
+  display: inline-block;
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.differentials-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-foreground);
+  margin-bottom: 1rem;
+}
+
+.differentials-description {
+  color: var(--color-foreground-80);
+  font-size: 1.125rem;
+  max-width: 42rem;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.differentials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.differential-card {
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.differential-card:hover {
+  border-color: rgba(212, 175, 55, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+}
+
+.differential-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  font-size: 1.75rem;
+  transition: transform 0.3s ease;
+}
+
+.differential-card:hover .differential-icon {
+  transform: scale(1.1);
+}
+
+.icon-primary {
+  background-color: rgba(212, 175, 55, 0.2);
+  color: var(--color-primary);
+}
+
+.icon-secondary {
+  background-color: rgba(255, 107, 53, 0.2);
+  color: #ff6b35;
+}
+
+.icon-green {
+  background-color: rgba(139, 195, 74, 0.2);
+  color: #8bc34a;
+}
+
+.icon-accent {
+  background-color: rgba(156, 39, 176, 0.2);
+  color: #9c27b0;
+}
+
+.differential-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-foreground);
+  margin-bottom: 0.75rem;
+  transition: color 0.3s ease;
+}
+
+.differential-card:hover .differential-title {
+  color: var(--color-primary);
+}
+
+.differential-description {
+  color: var(--color-foreground-80);
+  line-height: 1.6;
+}
+
+@media (min-width: 640px) {
+  .differentials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .differentials-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .differentials-header {
+    margin-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .differentials-section {
+    padding: 7rem 0;
+  }
+
+  .differentials-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .differentials-title {
+    font-size: 3rem;
+  }
+}
