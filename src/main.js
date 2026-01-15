@@ -1,24 +1,28 @@
-// import './style.css'
-// import javascriptLogo from './javascript.svg'
-// import viteLogo from '/vite.svg'
-// import { setupCounter } from './counter.js'
-import './menu.js'
-// document.querySelector('#app').innerHTML = `
-//   <div>
-//     <a href="https://vite.dev" target="_blank">
-//       <img src="${viteLogo}" class="logo" alt="Vite logo" />
-//     </a>
-//     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-//       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-//     </a>
-//     <h1>Hello Vite!</h1>
-//     <div class="card">
-//       <button id="counter" type="button"></button>
-//     </div>
-//     <p class="read-the-docs">
-//       Click on the Vite logo to learn more
-//     </p>
-//   </div>
-// `
+const navToggle = document.getElementById('navToggle');
+const mobileMenu = document.getElementById('mobileMenu');
 
-// setupCounter(document.querySelector('#counter'))
+function toggleMobileMenu() {
+    const icon = navToggle.querySelector('i');
+    const isActive = mobileMenu.classList.toggle('active');
+    
+    icon.className = isActive ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+    navToggle.setAttribute('aria-label', isActive ? 'Fechar menu' : 'Abrir menu');
+    navToggle.setAttribute('aria-expanded', isActive);
+    document.body.style.overflow = isActive ? 'hidden' : '';
+}
+
+navToggle.addEventListener('click', toggleMobileMenu);
+
+document.querySelectorAll('.mobile-nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        if (mobileMenu.classList.contains('active')) toggleMobileMenu();
+    });
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('active')) toggleMobileMenu();
+});
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768 && mobileMenu.classList.contains('active')) toggleMobileMenu();
+});
