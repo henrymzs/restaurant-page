@@ -756,336 +756,535 @@ body {
 }
 
 .differentials-section {
-  padding: 5rem 0;
-  background-color: var(--color-background);
+    padding: 5rem 0;
+    background-color: var(--color-background);
 }
 
 .differentials-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .differentials-header {
-  text-align: center;
-  margin-bottom: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 .differentials-label {
-  display: inline-block;
-  color: var(--color-primary);
-  font-weight: 600;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 0.75rem;
+    display: inline-block;
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
 }
 
 .differentials-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--color-foreground);
-  margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-foreground);
+    margin-bottom: 1rem;
 }
 
 .differentials-description {
-  color: var(--color-foreground-80);
-  font-size: 1.125rem;
-  max-width: 42rem;
-  margin: 0 auto;
-  line-height: 1.6;
+    color: var(--color-foreground-80);
+    font-size: 1.125rem;
+    max-width: 42rem;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
 .differentials-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 }
 
 .differential-card {
-  padding: 2rem;
-  border-radius: 1rem;
-  background-color: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
 }
 
 .differential-card:hover {
-  border-color: rgba(212, 175, 55, 0.3);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  transform: translateY(-4px);
+    border-color: rgba(212, 175, 55, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
 }
 
 .differential-icon {
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 0.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.25rem;
-  font-size: 1.75rem;
-  transition: transform 0.3s ease;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    font-size: 1.75rem;
+    transition: transform 0.3s ease;
 }
 
 .differential-card:hover .differential-icon {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .icon-primary {
-  background-color: rgba(212, 175, 55, 0.2);
-  color: var(--color-primary);
+    background-color: rgba(212, 175, 55, 0.2);
+    color: var(--color-primary);
 }
 
 .icon-secondary {
-  background-color: rgba(255, 107, 53, 0.2);
-  color: #ff6b35;
+    background-color: rgba(255, 107, 53, 0.2);
+    color: #ff6b35;
 }
 
 .icon-green {
-  background-color: rgba(139, 195, 74, 0.2);
-  color: #8bc34a;
+    background-color: rgba(139, 195, 74, 0.2);
+    color: #8bc34a;
 }
 
 .icon-accent {
-  background-color: rgba(156, 39, 176, 0.2);
-  color: #9c27b0;
+    background-color: rgba(156, 39, 176, 0.2);
+    color: #9c27b0;
 }
 
 .differential-title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--color-foreground);
-  margin-bottom: 0.75rem;
-  transition: color 0.3s ease;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-foreground);
+    margin-bottom: 0.75rem;
+    transition: color 0.3s ease;
 }
 
 .differential-card:hover .differential-title {
-  color: var(--color-primary);
+    color: var(--color-primary);
 }
 
 .differential-description {
-  color: var(--color-foreground-80);
-  line-height: 1.6;
+    color: var(--color-foreground-80);
+    line-height: 1.6;
 }
 
 @media (min-width: 640px) {
-  .differentials-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
+    .differentials-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
 
-  .differentials-title {
-    font-size: 2.5rem;
-  }
+    .differentials-title {
+        font-size: 2.5rem;
+    }
 }
 
 @media (min-width: 768px) {
-  .differentials-header {
-    margin-bottom: 4rem;
-  }
+    .differentials-header {
+        margin-bottom: 4rem;
+    }
 }
 
 @media (min-width: 1024px) {
-  .differentials-section {
-    padding: 7rem 0;
-  }
+    .differentials-section {
+        padding: 7rem 0;
+    }
 
-  .differentials-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+    .differentials-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
-  .differentials-title {
-    font-size: 3rem;
-  }
+    .differentials-title {
+        font-size: 3rem;
+    }
 }
 
 .testimonials-section {
-  padding: 5rem 0;
-  background-color: rgba(255, 255, 255, 0.02);
+    padding: 5rem 0;
+    background-color: rgba(255, 255, 255, 0.02);
 }
 
 .testimonials-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .testimonials-header {
-  text-align: center;
-  margin-bottom: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 .testimonials-label {
-  display: inline-block;
-  color: var(--color-primary);
-  font-weight: 600;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 0.75rem;
+    display: inline-block;
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
 }
 
 .testimonials-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--color-foreground);
-  margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-foreground);
+    margin-bottom: 1rem;
 }
 
 .testimonials-description {
-  color: var(--color-foreground-80);
-  font-size: 1.125rem;
-  max-width: 42rem;
-  margin: 0 auto;
-  line-height: 1.6;
+    color: var(--color-foreground-80);
+    font-size: 1.125rem;
+    max-width: 42rem;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
 .testimonials-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 }
 
 .testimonial-card {
-  position: relative;
-  padding: 2rem;
-  border-radius: 1rem;
-  background-color: rgba(255, 255, 255, 0.03);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+    position: relative;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
 
 .testimonial-card:hover {
-  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.2);
-  transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(212, 175, 55, 0.2);
+    transform: translateY(-4px);
 }
 
 .testimonial-quote {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  font-size: 2.5rem;
-  color: rgba(212, 175, 55, 0.1);
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2.5rem;
+    color: rgba(212, 175, 55, 0.1);
 }
 
 .testimonial-stars {
-  display: flex;
-  gap: 0.25rem;
-  margin-bottom: 1rem;
+    display: flex;
+    gap: 0.25rem;
+    margin-bottom: 1rem;
 }
 
 .testimonial-stars i {
-  font-size: 1.25rem;
-  color: #fbbf24;
+    font-size: 1.25rem;
+    color: #fbbf24;
 }
 
 .testimonial-content {
-  color: var(--color-foreground);
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-  position: relative;
-  z-index: 1;
+    color: var(--color-foreground);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
 }
 
 .testimonial-author {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .author-avatar {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background-color: var(--color-primary);
-  color: var(--color-background);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 0.875rem;
-  flex-shrink: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.875rem;
+    flex-shrink: 0;
 }
 
 .author-info {
-  flex: 1;
+    flex: 1;
 }
 
 .author-name {
-  font-weight: 600;
-  color: var(--color-foreground);
-  margin: 0 0 0.25rem;
-  font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-foreground);
+    margin: 0 0 0.25rem;
+    font-size: 0.9375rem;
 }
 
 .author-role {
-  font-size: 0.875rem;
-  color: var(--color-foreground-80);
-  margin: 0;
+    font-size: 0.875rem;
+    color: var(--color-foreground-80);
+    margin: 0;
 }
 
 .rating-summary {
-  margin-top: 3rem;
-  text-align: center;
+    margin-top: 3rem;
+    text-align: center;
 }
 
 .rating-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  background-color: rgba(255, 255, 255, 0.03);
-  padding: 1rem 1.5rem;
-  border-radius: 9999px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 1rem 1.5rem;
+    border-radius: 9999px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .rating-stars {
-  display: flex;
-  gap: 0.25rem;
+    display: flex;
+    gap: 0.25rem;
 }
 
 .rating-stars i {
-  font-size: 1.5rem;
-  color: #fbbf24;
+    font-size: 1.5rem;
+    color: #fbbf24;
 }
 
 .rating-score {
-  color: var(--color-foreground);
-  font-weight: 600;
-  font-size: 1rem;
+    color: var(--color-foreground);
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 .rating-count {
-  color: var(--color-foreground-80);
-  font-size: 1rem;
+    color: var(--color-foreground-80);
+    font-size: 1rem;
 }
 
 @media (min-width: 768px) {
-  .testimonials-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
 
-  .testimonials-header {
-    margin-bottom: 4rem;
-  }
+    .testimonials-header {
+        margin-bottom: 4rem;
+    }
 
-  .testimonials-title {
-    font-size: 2.5rem;
-  }
+    .testimonials-title {
+        font-size: 2.5rem;
+    }
 
-  .testimonial-card {
-    padding: 2rem;
-  }
+    .testimonial-card {
+        padding: 2rem;
+    }
 }
 
 @media (min-width: 1024px) {
-  .testimonials-section {
-    padding: 7rem 0;
-  }
+    .testimonials-section {
+        padding: 7rem 0;
+    }
 
-  .testimonials-title {
-    font-size: 3rem;
-  }
+    .testimonials-title {
+        font-size: 3rem;
+    }
+}
+
+.location-section {
+    padding: 5rem 0;
+    background-color: var(--color-background);
+}
+
+.location-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.location-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.location-label {
+    display: inline-block;
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.75rem;
+}
+
+.location-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-foreground);
+    margin-bottom: 1rem;
+}
+
+.location-description {
+    color: var(--color-foreground-80);
+    font-size: 1.125rem;
+    max-width: 42rem;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.location-map {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    height: 350px;
+}
+
+.location-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.info-card {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.info-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+.info-card-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.info-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.icon-primary {
+    background-color: rgba(212, 175, 55, 0.1);
+    color: var(--color-primary);
+}
+
+.icon-secondary {
+    background-color: rgba(255, 107, 53, 0.2);
+    color: #ff6b35;
+}
+
+.icon-whatsapp {
+    background-color: rgba(37, 211, 102, 0.2);
+    color: #25D366;
+}
+
+.info-text {
+    flex: 1;
+}
+
+.info-text-full {
+    width: 100%;
+}
+
+.info-title {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--color-foreground);
+    margin: 0 0 0.5rem;
+}
+
+.info-description {
+    color: var(--color-foreground-80);
+    margin: 0 0 0.75rem;
+    line-height: 1.6;
+}
+
+.info-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-primary);
+    font-weight: 500;
+    margin-top: 0.75rem;
+    transition: opacity 0.3s ease;
+}
+
+.info-link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+.info-link i {
+    font-size: 1rem;
+}
+
+.hours-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--color-foreground-80);
+    margin-top: 0.75rem;
+}
+
+.hours-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hours-time {
+    font-weight: 500;
+    color: var(--color-foreground);
+}
+
+.btn-contact {
+    font-size: 0.875rem;
+    margin-top: 0.75rem;
+}
+
+@media (min-width: 768px) {
+    .location-map {
+        height: 450px;
+    }
+
+    .location-header {
+        margin-bottom: 4rem;
+    }
+
+    .location-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .location-section {
+        padding: 7rem 0;
+    }
+
+    .location-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    .location-title {
+        font-size: 3rem;
+    }
 }
