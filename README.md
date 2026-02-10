@@ -1,10 +1,19 @@
-# Sabor & Arte – Landing Page
-Landing page responsiva de restaurante construída com HTML, CSS e JavaScript.
+<h1 align="center">Sabor & Arte – Landing Page</h1>
 
-# 📄 Descrição
-Projeto de landing page completa para um restaurante fictício chamado “Sabor & Arte”, construída em HTML, CSS e JavaScript, podendo ser usada em um fluxo simples ou integrada a um bundler como Vite.
+<p align="center">
+  Projeto de landing page completa para um restaurante fictício chamado “Sabor & Arte”, construída em HTML, CSS e JavaScript, podendo ser usada em um fluxo simples ou integrada a um bundler como Vite.
+</p>
 
-# 💻 Sobre o projeto
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML-181717?style=flat&logo=HTML5" />
+  <img src="https://img.shields.io/badge/CSS-181717?style=flat&logo=CSS" />
+  <img src="https://img.shields.io/badge/JavaScript-181717?style=flat&logo=JavaScript" />
+  <img src="https://img.shields.io/badge/Vite-181717?style=flat&logo=Vite" />
+  <img src="https://img.shields.io/badge/Bun-181717?style=flat&logo=Bun" />
+</p>
+
+
+### 💻 Sobre o projeto
 Sabor & Arte - Landing Page é um projeto criado para praticar HTML, CSS e Javascript.
 
 | Mobile | Desktop |
@@ -13,7 +22,7 @@ Sabor & Arte - Landing Page é um projeto criado para praticar HTML, CSS e Javas
 
 O desafio consistiu em reproduzir fielmente o visual e comportamento (header fixo, navegação, seções, botões, cards, etc.), mantendo responsividade e boa organização de código, mas sem depêndencia de frameworks.
 
-# ⚙️ Funcionalidades
+### ⚙️ Funcionalidades
 Header fixo com:
 
 - Menu de navegação desktop
@@ -40,7 +49,7 @@ Seções estruturadas:
 
 - Layout totalmente responsivo (mobile-first)
 
-# 🎨 Layout
+### 🎨 Layout
 Como o layout foi construído diretamente em código, não há link público de protótipo, mas a estrutura visual segue esta organização:
 
 - Header + Hero: topo com navegação e imagem de destaque em tela cheia
@@ -59,7 +68,7 @@ Como o layout foi construído diretamente em código, não há link público de 
 
 - Footer: informações finais e links sociais
 
-# 🚀 Como executar o projeto
+### 🚀 Como executar o projeto
 1. Clonar ou baixar o repositório
 
 ```bash
@@ -92,7 +101,7 @@ Pré-requisitos
     Node.js instalado
     Gerenciador de pacotes (npm)
 
-# 🛠 Tecnologias
+### 🛠 Tecnologias
 - HTML5
 
 - CSS3 (layout responsivo, grid/flexbox, efeitos de hover)
@@ -101,7 +110,7 @@ Pré-requisitos
 
 - Font Awesome (ícones)
 
-# 💪 Como contribuir para o projeto
+### 💪 Como contribuir para o projeto
 1. Faça um fork do repositório
 
 2. Crie uma branch para a sua feature:
@@ -121,7 +130,7 @@ git push origin minha-feature
 
 5. Abra um Pull Request
 
-# 🦸 Autor
+### 🦸 Autor
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github)](https://github.com/henrymzs)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin)](https://linkedin.com/in/henry-kaua)
